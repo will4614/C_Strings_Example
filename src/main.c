@@ -16,14 +16,14 @@
  Description:	Use strncat and snprintf to build null termianted strings
  
  Parameters:	none
- 
+
  Returned:		EXIT_SUCCESS
 ****************************************************************************/
 int main()
 {
 
   const int BUFFER_SIZE = 1024;
-  const int SMALL_ST_SIZE = 50;
+  const int SMALL_ST_SIZE = 15;
 
   char szBuffer[BUFFER_SIZE];
   char szSmallString[SMALL_ST_SIZE];
