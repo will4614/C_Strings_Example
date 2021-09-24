@@ -1,7 +1,24 @@
+//***************************************************************************
+// File name:		main.c
+// Author:			chadd williams
+// Date:				September 24, 2021
+// Class:				CS 360
+// Purpose:			Demonstrate strncat and snprintf
+//***************************************************************************
+
 #include <stdio.h>
 #include <string.h> 
 #include <stdlib.h>
 
+/****************************************************************************
+ Function:		main
+ 
+ Description:	Use strncat and snprintf to build null termianted strings
+ 
+ Parameters:	none
+ 
+ Returned:		EXIT_SUCCESS
+****************************************************************************/
 int main()
 {
 
