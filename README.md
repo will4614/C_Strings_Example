@@ -1,1 +1,1 @@
-# C_VSCode_Template
+# C_Strings_Example
