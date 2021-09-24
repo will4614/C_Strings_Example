@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h> 
+#include <stdlib.h>
 
 int main()
 {
@@ -37,4 +38,13 @@ int main()
   printf("szSmallString: %s\n\n", szSmallString);
 
 
+  // destination: szBuffer
+  // size: BUFFER_SIZE
+  // format string: "MSG TXT ..."
+  // variables: szSmallString
+  snprintf(szBuffer, BUFFER_SIZE, "MSG TXT 1.1\r\n%s\r\n", szSmallString);
+
+  printf("szBuffer: \n%s\n\n", szBuffer);
+
+  return EXIT_SUCCESS;
 }
