@@ -70,7 +70,7 @@ int main()
   // variables: szSmallString
   snprintf(szBuffer, BUFFER_SIZE, "MSG TXT 1.1\r\n%s\r\n", szSmallString);
 
-  printf("szBuffer: \n%s\n\n", szBuffer);
+  printf("szBuffer: \n>|%s|<\n\n", szBuffer);
 
   return EXIT_SUCCESS;
 }
