@@ -21,12 +21,21 @@
 ****************************************************************************/
 int main()
 {
-
   const int BUFFER_SIZE = 1024;
   const int SMALL_ST_SIZE = 15;
+  const int NAME_SIZE = 8;
+
 
   char szBuffer[BUFFER_SIZE];
   char szSmallString[SMALL_ST_SIZE];
+  char szName[NAME_SIZE];
+  
+
+  // copy data into szName
+  strncpy(szName, "CS360", NAME_SIZE);
+
+  printf("szName: %s\n\n", szName);
+
 
 
   // null terminate both empty strings
