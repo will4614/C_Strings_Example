@@ -50,7 +50,7 @@ int main()
 
   // szSmBuffer now looks like:
   // Hello CS 360.\0\0
-  printf("szSmBuffer: >|%s|<\n\n", szSmBuffer);
+  printf("0. szSmBuffer: >|%s|<\n\n", szSmBuffer);
 
   // use strncpy to copy RO_STR into
   // szBuffer
@@ -62,28 +62,28 @@ int main()
   // copied to szBuffer.
   strncpy(szBuffer, RO_STR, BUF_SIZE);
 
-  printf("szBuffer >|%s|<\n\n", szBuffer);
+  printf("1. szBuffer >|%s|<\n\n", szBuffer);
 
   // use strncat to copy RO_STR on to
   // the end of szBuffer
 
   strncat(szBuffer, RO_STR, BUF_SIZE - strlen(szBuffer) - 1);
 
-  printf("szBuffer >|%s|<\n\n", szBuffer);
+  printf("2. szBuffer >|%s|<\n\n", szBuffer);
 
   // use strstr to find Max: in szBuffer
   pStr = strstr(szBuffer, "Max:");
 
   if ( NULL == pStr )
   {
-    printf("Max: NOT FOUND!\n\n");
+    printf("ERROR: Max: NOT FOUND!\n\n");
   }
   else
   {
     // found Max:
     // pStr now points to the point in szBuffer
     // that contains the first Max:
-    printf("pStr >|%s|<\n\n", pStr);
+    printf("3. pStr >|%s|<\n\n", pStr);
 
     // find the first digit past Max:
     while ( !isdigit(*pStr))
@@ -105,7 +105,7 @@ int main()
     // the last digit. In this case, a space.
 
     // print the char pStr points to, so use the *
-    printf("pStr >|%c|< pEnd >|%c|<\n\n", *pStr, *pEnd);
+    printf("4. pStr >|%c|< pEnd >|%c|<\n\n", *pStr, *pEnd);
 
     // turn the text into an int using atoi
     // atoi requires a NULL terminated string
@@ -123,10 +123,10 @@ int main()
     // is NULL terminated. 
     // Let's check. We know printf prints
     // until a \0 is found.
-    printf("pStr >|%s|<\n\n", pStr);
+    printf("5. pStr >|%s|<\n\n", pStr);
 
     // Let's check szBuffer too!
-    printf("szBuffer >|%s|<\n\n", szBuffer);
+    printf("6. szBuffer >|%s|<\n\n", szBuffer);
 
     // now call atoi
     value = atoi(pStr);
@@ -135,10 +135,10 @@ int main()
     *pEnd = tmpChar;
 
     // print the int!
-    printf("value: >|%d|<\n\n", value);
+    printf("7. value: >|%d|<\n\n", value);
 
     // print szBuffer after restoring the space
-    printf("szBuffer >|%s|<\n\n", szBuffer);
+    printf("8. szBuffer >|%s|<\n\n", szBuffer);
   }
 
 
