@@ -61,8 +61,6 @@ int main()
   // the first BUF_SIZE bytes, the \0 is
   // copied to szBuffer.
 
-  // first make sure the szBuffer is NULL terminated
-  szBuffer[0] = '\0';
   strncpy(szBuffer, RO_STR, BUF_SIZE);
 
   printf("1. szBuffer >|%s|<\n\n", szBuffer);
