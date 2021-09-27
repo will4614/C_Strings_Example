@@ -12,7 +12,7 @@ Examples_2.c demonstrates [strncpy](https://linux.die.net/man/3/strncpy), [strnc
 git clone this repository to your local vm and then you can git pull to get updates from GitHub as they are added.
 
 ```
-git clone ggit@github.com:CS360-Networking-PACU/C_Strings_Example.git
+git clone git@github.com:CS360-Networking-PACU/C_Strings_Example.git
 
 
 git pull
